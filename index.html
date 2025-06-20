@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papelería Creativa</title>
+  <style>
+    :root {
+      --color-principal: #4caf50;
+      --color-secundario: #f5f5f5;
+      --color-texto: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--color-secundario);
+      color: var(--color-texto);
+    }
+
+    header {
+      background-color: var(--color-principal);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #388e3c;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .galeria img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin: 5px;
+      border-radius: 8px;
+    }
+
+    .tabla-productos {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .tabla-productos th, .tabla-productos td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .marquesina {
+      background-color: #c8e6c9;
+      padding: 10px;
+      margin: 15px 0;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .marquesina marquee {
+      font-size: 1.1em;
+      color: #2e7d32;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 2px solid var(--color-principal);
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    hr {
+      border: 2px solid var(--color-principal);
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Papelería Creativa "Dkasio"</h1>
+    <p>Todo lo que necesitas para tu escuela, oficina o creatividad</p>
+  </header>
+
+  <nav>
+    <a href="#galeria">Galería</a>
+    <a href="#productos">Productos</a>
+    <a href="#listas">Listas</a>
+    <a href="#glosario">Glosario</a>
+    <a href="pagina1.html" target="visor">¿Quiénes somos?</a>
+    <a href="pagina2.html" target="visor">Promociones</a>
+    <a href="pagina3.html" target="visor">Ubicación</a>
+  </nav>
+
+  <main>
+    <section class="marquesina">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        ¡Ofertas del mes! - Compra tus útiles escolares aquí - Regalos y envolturas - Gran variedad en papelería - Impresiones a color - Servicio amable - Entrega a domicilio - Abierto todos los días - Cuadernos desde $20 - ¡Visítanos hoy mismo!
+      </marquee>
+    </section>
+
+    <iframe name="visor" src="pagina1.html"></iframe>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="galeria">
+        <img src="cinta adesiva.jpg" alt="Producto 1">
+        <img src="colores.jpg" alt="Producto 2">
+        <img src="goma.jpg" alt="Producto 3">
+        <img src="lapicera.webp" alt="Producto 4">
+        <img src="lapiceros.jpg" alt="Producto 5">
+        <img src="lapiz.png" alt="Producto 6">
+        <img src="marcadores.jpg" alt="Producto 7">
+        <img src="mochila.jpg" alt="Producto 8">
+        <img src="pegamento escolar.jpg" alt="Producto 9">
+        <img src="sacapuntas.jpg" alt="Producto 10">
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="productos">
+      <h2>Productos y Precios</h2>
+      <table class="tabla-productos">
+        <thead>
+          <tr><th>Producto</th><th>Precio</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lápiz</td><td>$5</td></tr>
+          <tr><td>Cuaderno</td><td>$25</td></tr>
+          <tr><td>Colores</td><td>$35</td></tr>
+          <tr><td>Hojas blancas (paquete)</td><td>$20</td></tr>
+          <tr><td>Marcadores</td><td>$40</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="listas">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Copias e impresiones</li>
+        <li>Encuadernado</li>
+        <li>Plastificado</li>
+      </ul>
+      <ol>
+        <li>Elige el producto</li>
+        <li>Realiza el pago</li>
+        <li>Recibe tu compra</li>
+      </ol>
+      <dl>
+        <dt>Plastificado</dt>
+        <dd>Protección con mica transparente</dd>
+        <dt>Encuadernado</dt>
+        <dd>Unión de hojas con espiral</dd>
+      </dl>
+    </section>
+
+    <hr>
+
+    <section id="glosario">
+      <h2>Glosario</h2>
+      <ul>
+        <li><strong>Resaltador:</strong> Lápiz fluorescente para marcar textos</li>
+        <li><strong>Folder:</strong> Carpeta delgada para archivar documentos</li>
+        <li><strong>Cartulina:</strong> Hoja gruesa utilizada en manualidades</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Papelería Creativa. Todos los derechos reservados. Creador Industrias Kasio.</p>
+  </footer>
+</body>
+</html>
